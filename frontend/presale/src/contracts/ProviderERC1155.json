@@ -1,0 +1,1853 @@
+{
+  "contractName": "ProviderERC1155",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numOptions",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_optionId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "canMint",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_optionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "uri",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "supportsProviderInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "providerSchemaName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_optionId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_toAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_optionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_optionId\",\"type\":\"uint256\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_optionId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"canMint\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_optionId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_toAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numOptions\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"providerSchemaName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"supportsProviderInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_optionId\",\"type\":\"uint256\"}],\"name\":\"uri\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"canMint(uint256,uint256)\":{\"details\":\"Returns whether the option ID can be minted. Can return false if the developer wishes to restrict a total supply per option ID (or overall).\"},\"mint(uint256,address,uint256,bytes)\":{\"details\":\"Mints asset(s) in accordance to a specific address with a particular \\\"option\\\". This should be callable only by the contract owner or the owner's Wyvern Proxy (later universal login will solve this). Options should also be delineated 0 - (numOptions() - 1) for convenient indexing.\",\"params\":{\"_amount\":\"amount of the option to mint\",\"_data\":\"Extra data to pass during safeTransferFrom\",\"_optionId\":\"the option id\",\"_toAddress\":\"address of the future owner of the asset(s)\"}},\"uri(uint256)\":{\"details\":\"Returns a URL specifying some metadata about the option. This metadata can be of the same structure as the ERC1155 metadata.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"name()\":{\"notice\":\"Returns the name of this provider.\"},\"numOptions()\":{\"notice\":\"Number of options the provider supports.\"},\"providerSchemaName()\":{\"notice\":\"Indicates the Wyvern schema name for assets in this lootbox, e.g. \\\"ERC1155\\\"\"},\"supportsProviderInterface()\":{\"notice\":\"Indicates that this is a provider contract. Ideally would use EIP 165 supportsInterface()\"},\"symbol()\":{\"notice\":\"Returns the symbol for this provider.\"}},\"notice\":\"This is a generic provider contract that can be used to mint tokens. The configuration for minting is specified by an _optionId, which can be used to delineate various ways of minting.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IProviderERC1155.sol\":\"ProviderERC1155\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":0},\"remappings\":[]},\"sources\":{\"project:/contracts/IProviderERC1155.sol\":{\"keccak256\":\"0x64430978b40592f2c821784c4a6230b5c522f7fb3831cf427dfd42449b7d4f53\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2b5ea285c9669f0c89fee6dda78629227c4873b96d86c58b906ae8fbc45595a4\",\"dweb:/ipfs/QmcgVyZEcniTZLZ6wxGVb6pwvcu9orJBBWjJDRU2wPp3bR\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.8.0;\r\n\r\n/**\r\n * This is a generic provider contract that can be used to mint tokens. The configuration\r\n * for minting is specified by an _optionId, which can be used to delineate various\r\n * ways of minting.\r\n */\r\ninterface ProviderERC1155 {\r\n    /**\r\n     * Returns the name of this provider.\r\n     */\r\n    function name() external view returns (string memory);\r\n\r\n    /**\r\n     * Returns the symbol for this provider.\r\n     */\r\n    function symbol() external view returns (string memory);\r\n\r\n    /**\r\n     * Number of options the provider supports.\r\n     */\r\n    function numOptions() external view returns (uint256);\r\n\r\n    /**\r\n     * @dev Returns whether the option ID can be minted. Can return false if the developer wishes to\r\n     * restrict a total supply per option ID (or overall).\r\n     */\r\n    function canMint(uint256 _optionId, uint256 _amount)\r\n        external\r\n        view\r\n        returns (bool);\r\n\r\n    /**\r\n     * @dev Returns a URL specifying some metadata about the option. This metadata can be of the\r\n     * same structure as the ERC1155 metadata.\r\n     */\r\n    function uri(uint256 _optionId) external view returns (string memory);\r\n\r\n    /**\r\n     * Indicates that this is a provider contract. Ideally would use EIP 165 supportsInterface()\r\n     */\r\n    function supportsProviderInterface() external view returns (bool);\r\n\r\n    /**\r\n     * Indicates the Wyvern schema name for assets in this lootbox, e.g. \"ERC1155\"\r\n     */\r\n    function providerSchemaName() external view returns (string memory);\r\n\r\n    /**\r\n     * @dev Mints asset(s) in accordance to a specific address with a particular \"option\". This should be\r\n     * callable only by the contract owner or the owner's Wyvern Proxy (later universal login will solve this).\r\n     * Options should also be delineated 0 - (numOptions() - 1) for convenient indexing.\r\n     * @param _optionId the option id\r\n     * @param _toAddress address of the future owner of the asset(s)\r\n     * @param _amount amount of the option to mint\r\n     * @param _data Extra data to pass during safeTransferFrom\r\n     */\r\n    function mint(\r\n        uint256 _optionId,\r\n        address _toAddress,\r\n        uint256 _amount,\r\n        bytes calldata _data\r\n    ) external;\r\n\r\n    ///////\r\n    // Get things to work on OpenSea with mock methods below\r\n    ///////\r\n\r\n    //function safeTransferFrom(address _from, address _to, uint256 _optionId, uint256 _amount, bytes calldata _data) external;\r\n\r\n    function balanceOf(address _owner, uint256 _optionId)\r\n        external\r\n        view\r\n        returns (uint256);\r\n\r\n    //function isApprovedForAll(address _owner, address _operator) external view returns (bool);\r\n}\r\n",
+  "sourcePath": "D:\\04_Work\\001\\NFT_presale\\smart_contract\\contracts\\IProviderERC1155.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IProviderERC1155.sol",
+    "exportedSymbols": {
+      "ProviderERC1155": [
+        5755
+      ]
+    },
+    "id": 5756,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5684,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:23:26"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5685,
+          "nodeType": "StructuredDocumentation",
+          "src": "62:205:26",
+          "text": " This is a generic provider contract that can be used to mint tokens. The configuration\n for minting is specified by an _optionId, which can be used to delineate various\n ways of minting."
+        },
+        "fullyImplemented": false,
+        "id": 5755,
+        "linearizedBaseContracts": [
+          5755
+        ],
+        "name": "ProviderERC1155",
+        "nameLocation": "279:15:26",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 5686,
+              "nodeType": "StructuredDocumentation",
+              "src": "302:55:26",
+              "text": " Returns the name of this provider."
+            },
+            "functionSelector": "06fdde03",
+            "id": 5691,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "name",
+            "nameLocation": "372:4:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5687,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "376:2:26"
+            },
+            "returnParameters": {
+              "id": 5690,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5689,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5691,
+                  "src": "402:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5688,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "402:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "401:15:26"
+            },
+            "scope": 5755,
+            "src": "363:54:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5692,
+              "nodeType": "StructuredDocumentation",
+              "src": "425:58:26",
+              "text": " Returns the symbol for this provider."
+            },
+            "functionSelector": "95d89b41",
+            "id": 5697,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "symbol",
+            "nameLocation": "498:6:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5693,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:2:26"
+            },
+            "returnParameters": {
+              "id": 5696,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5695,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5697,
+                  "src": "530:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5694,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "530:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "529:15:26"
+            },
+            "scope": 5755,
+            "src": "489:56:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5698,
+              "nodeType": "StructuredDocumentation",
+              "src": "553:61:26",
+              "text": " Number of options the provider supports."
+            },
+            "functionSelector": "4b97aed9",
+            "id": 5703,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "numOptions",
+            "nameLocation": "629:10:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5699,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "639:2:26"
+            },
+            "returnParameters": {
+              "id": 5702,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5701,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5703,
+                  "src": "665:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5700,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "665:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "664:9:26"
+            },
+            "scope": 5755,
+            "src": "620:54:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5704,
+              "nodeType": "StructuredDocumentation",
+              "src": "682:174:26",
+              "text": " @dev Returns whether the option ID can be minted. Can return false if the developer wishes to\n restrict a total supply per option ID (or overall)."
+            },
+            "functionSelector": "22e1dea9",
+            "id": 5713,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canMint",
+            "nameLocation": "871:7:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5709,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5706,
+                  "mutability": "mutable",
+                  "name": "_optionId",
+                  "nameLocation": "887:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5713,
+                  "src": "879:17:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5705,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "879:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5708,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "906:7:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5713,
+                  "src": "898:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5707,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "898:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "878:36:26"
+            },
+            "returnParameters": {
+              "id": 5712,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5711,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5713,
+                  "src": "965:4:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5710,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "965:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "964:6:26"
+            },
+            "scope": 5755,
+            "src": "862:109:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5714,
+              "nodeType": "StructuredDocumentation",
+              "src": "979:158:26",
+              "text": " @dev Returns a URL specifying some metadata about the option. This metadata can be of the\n same structure as the ERC1155 metadata."
+            },
+            "functionSelector": "0e89341c",
+            "id": 5721,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "uri",
+            "nameLocation": "1152:3:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5717,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5716,
+                  "mutability": "mutable",
+                  "name": "_optionId",
+                  "nameLocation": "1164:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5721,
+                  "src": "1156:17:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5715,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1156:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1155:19:26"
+            },
+            "returnParameters": {
+              "id": 5720,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5719,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5721,
+                  "src": "1198:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5718,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1198:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1197:15:26"
+            },
+            "scope": 5755,
+            "src": "1143:70:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5722,
+              "nodeType": "StructuredDocumentation",
+              "src": "1221:110:26",
+              "text": " Indicates that this is a provider contract. Ideally would use EIP 165 supportsInterface()"
+            },
+            "functionSelector": "47841056",
+            "id": 5727,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supportsProviderInterface",
+            "nameLocation": "1346:25:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5723,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1371:2:26"
+            },
+            "returnParameters": {
+              "id": 5726,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5725,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5727,
+                  "src": "1397:4:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5724,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1397:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1396:6:26"
+            },
+            "scope": 5755,
+            "src": "1337:66:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5728,
+              "nodeType": "StructuredDocumentation",
+              "src": "1411:96:26",
+              "text": " Indicates the Wyvern schema name for assets in this lootbox, e.g. \"ERC1155\""
+            },
+            "functionSelector": "23ab9455",
+            "id": 5733,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "providerSchemaName",
+            "nameLocation": "1522:18:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5729,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1540:2:26"
+            },
+            "returnParameters": {
+              "id": 5732,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5731,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5733,
+                  "src": "1566:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5730,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1566:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1565:15:26"
+            },
+            "scope": 5755,
+            "src": "1513:68:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5734,
+              "nodeType": "StructuredDocumentation",
+              "src": "1589:547:26",
+              "text": " @dev Mints asset(s) in accordance to a specific address with a particular \"option\". This should be\n callable only by the contract owner or the owner's Wyvern Proxy (later universal login will solve this).\n Options should also be delineated 0 - (numOptions() - 1) for convenient indexing.\n @param _optionId the option id\n @param _toAddress address of the future owner of the asset(s)\n @param _amount amount of the option to mint\n @param _data Extra data to pass during safeTransferFrom"
+            },
+            "functionSelector": "c77b66c2",
+            "id": 5745,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "2151:4:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5743,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5736,
+                  "mutability": "mutable",
+                  "name": "_optionId",
+                  "nameLocation": "2174:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5745,
+                  "src": "2166:17:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5735,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2166:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5738,
+                  "mutability": "mutable",
+                  "name": "_toAddress",
+                  "nameLocation": "2202:10:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5745,
+                  "src": "2194:18:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5737,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2194:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5740,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "2231:7:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5745,
+                  "src": "2223:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5739,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2223:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5742,
+                  "mutability": "mutable",
+                  "name": "_data",
+                  "nameLocation": "2264:5:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5745,
+                  "src": "2249:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 5741,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2249:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2155:121:26"
+            },
+            "returnParameters": {
+              "id": 5744,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2285:0:26"
+            },
+            "scope": 5755,
+            "src": "2142:144:26",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "00fdd58e",
+            "id": 5754,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceOf",
+            "nameLocation": "2524:9:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5750,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5747,
+                  "mutability": "mutable",
+                  "name": "_owner",
+                  "nameLocation": "2542:6:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5754,
+                  "src": "2534:14:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5746,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2534:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5749,
+                  "mutability": "mutable",
+                  "name": "_optionId",
+                  "nameLocation": "2558:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5754,
+                  "src": "2550:17:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5748,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2550:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2533:35:26"
+            },
+            "returnParameters": {
+              "id": 5753,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5752,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5754,
+                  "src": "2619:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5751,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2619:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2618:9:26"
+            },
+            "scope": 5755,
+            "src": "2515:113:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5756,
+        "src": "269:2462:26",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:2698:26"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/IProviderERC1155.sol",
+    "exportedSymbols": {
+      "ProviderERC1155": [
+        5755
+      ]
+    },
+    "id": 5756,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5684,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:23:26"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5685,
+          "nodeType": "StructuredDocumentation",
+          "src": "62:205:26",
+          "text": " This is a generic provider contract that can be used to mint tokens. The configuration\n for minting is specified by an _optionId, which can be used to delineate various\n ways of minting."
+        },
+        "fullyImplemented": false,
+        "id": 5755,
+        "linearizedBaseContracts": [
+          5755
+        ],
+        "name": "ProviderERC1155",
+        "nameLocation": "279:15:26",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 5686,
+              "nodeType": "StructuredDocumentation",
+              "src": "302:55:26",
+              "text": " Returns the name of this provider."
+            },
+            "functionSelector": "06fdde03",
+            "id": 5691,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "name",
+            "nameLocation": "372:4:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5687,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "376:2:26"
+            },
+            "returnParameters": {
+              "id": 5690,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5689,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5691,
+                  "src": "402:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5688,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "402:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "401:15:26"
+            },
+            "scope": 5755,
+            "src": "363:54:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5692,
+              "nodeType": "StructuredDocumentation",
+              "src": "425:58:26",
+              "text": " Returns the symbol for this provider."
+            },
+            "functionSelector": "95d89b41",
+            "id": 5697,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "symbol",
+            "nameLocation": "498:6:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5693,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:2:26"
+            },
+            "returnParameters": {
+              "id": 5696,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5695,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5697,
+                  "src": "530:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5694,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "530:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "529:15:26"
+            },
+            "scope": 5755,
+            "src": "489:56:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5698,
+              "nodeType": "StructuredDocumentation",
+              "src": "553:61:26",
+              "text": " Number of options the provider supports."
+            },
+            "functionSelector": "4b97aed9",
+            "id": 5703,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "numOptions",
+            "nameLocation": "629:10:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5699,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "639:2:26"
+            },
+            "returnParameters": {
+              "id": 5702,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5701,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5703,
+                  "src": "665:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5700,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "665:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "664:9:26"
+            },
+            "scope": 5755,
+            "src": "620:54:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5704,
+              "nodeType": "StructuredDocumentation",
+              "src": "682:174:26",
+              "text": " @dev Returns whether the option ID can be minted. Can return false if the developer wishes to\n restrict a total supply per option ID (or overall)."
+            },
+            "functionSelector": "22e1dea9",
+            "id": 5713,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canMint",
+            "nameLocation": "871:7:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5709,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5706,
+                  "mutability": "mutable",
+                  "name": "_optionId",
+                  "nameLocation": "887:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5713,
+                  "src": "879:17:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5705,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "879:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5708,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "906:7:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5713,
+                  "src": "898:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5707,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "898:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "878:36:26"
+            },
+            "returnParameters": {
+              "id": 5712,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5711,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5713,
+                  "src": "965:4:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5710,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "965:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "964:6:26"
+            },
+            "scope": 5755,
+            "src": "862:109:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5714,
+              "nodeType": "StructuredDocumentation",
+              "src": "979:158:26",
+              "text": " @dev Returns a URL specifying some metadata about the option. This metadata can be of the\n same structure as the ERC1155 metadata."
+            },
+            "functionSelector": "0e89341c",
+            "id": 5721,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "uri",
+            "nameLocation": "1152:3:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5717,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5716,
+                  "mutability": "mutable",
+                  "name": "_optionId",
+                  "nameLocation": "1164:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5721,
+                  "src": "1156:17:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5715,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1156:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1155:19:26"
+            },
+            "returnParameters": {
+              "id": 5720,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5719,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5721,
+                  "src": "1198:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5718,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1198:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1197:15:26"
+            },
+            "scope": 5755,
+            "src": "1143:70:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5722,
+              "nodeType": "StructuredDocumentation",
+              "src": "1221:110:26",
+              "text": " Indicates that this is a provider contract. Ideally would use EIP 165 supportsInterface()"
+            },
+            "functionSelector": "47841056",
+            "id": 5727,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supportsProviderInterface",
+            "nameLocation": "1346:25:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5723,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1371:2:26"
+            },
+            "returnParameters": {
+              "id": 5726,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5725,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5727,
+                  "src": "1397:4:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5724,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1397:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1396:6:26"
+            },
+            "scope": 5755,
+            "src": "1337:66:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5728,
+              "nodeType": "StructuredDocumentation",
+              "src": "1411:96:26",
+              "text": " Indicates the Wyvern schema name for assets in this lootbox, e.g. \"ERC1155\""
+            },
+            "functionSelector": "23ab9455",
+            "id": 5733,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "providerSchemaName",
+            "nameLocation": "1522:18:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5729,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1540:2:26"
+            },
+            "returnParameters": {
+              "id": 5732,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5731,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5733,
+                  "src": "1566:13:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5730,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1566:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1565:15:26"
+            },
+            "scope": 5755,
+            "src": "1513:68:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 5734,
+              "nodeType": "StructuredDocumentation",
+              "src": "1589:547:26",
+              "text": " @dev Mints asset(s) in accordance to a specific address with a particular \"option\". This should be\n callable only by the contract owner or the owner's Wyvern Proxy (later universal login will solve this).\n Options should also be delineated 0 - (numOptions() - 1) for convenient indexing.\n @param _optionId the option id\n @param _toAddress address of the future owner of the asset(s)\n @param _amount amount of the option to mint\n @param _data Extra data to pass during safeTransferFrom"
+            },
+            "functionSelector": "c77b66c2",
+            "id": 5745,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "2151:4:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5743,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5736,
+                  "mutability": "mutable",
+                  "name": "_optionId",
+                  "nameLocation": "2174:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5745,
+                  "src": "2166:17:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5735,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2166:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5738,
+                  "mutability": "mutable",
+                  "name": "_toAddress",
+                  "nameLocation": "2202:10:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5745,
+                  "src": "2194:18:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5737,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2194:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5740,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "2231:7:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5745,
+                  "src": "2223:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5739,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2223:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5742,
+                  "mutability": "mutable",
+                  "name": "_data",
+                  "nameLocation": "2264:5:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5745,
+                  "src": "2249:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 5741,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2249:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2155:121:26"
+            },
+            "returnParameters": {
+              "id": 5744,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2285:0:26"
+            },
+            "scope": 5755,
+            "src": "2142:144:26",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "00fdd58e",
+            "id": 5754,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceOf",
+            "nameLocation": "2524:9:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5750,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5747,
+                  "mutability": "mutable",
+                  "name": "_owner",
+                  "nameLocation": "2542:6:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5754,
+                  "src": "2534:14:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5746,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2534:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5749,
+                  "mutability": "mutable",
+                  "name": "_optionId",
+                  "nameLocation": "2558:9:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5754,
+                  "src": "2550:17:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5748,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2550:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2533:35:26"
+            },
+            "returnParameters": {
+              "id": 5753,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5752,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5754,
+                  "src": "2619:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5751,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2619:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2618:9:26"
+            },
+            "scope": 5755,
+            "src": "2515:113:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5756,
+        "src": "269:2462:26",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:2698:26"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-10-19T18:53:42.655Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "canMint(uint256,uint256)": {
+        "details": "Returns whether the option ID can be minted. Can return false if the developer wishes to restrict a total supply per option ID (or overall)."
+      },
+      "mint(uint256,address,uint256,bytes)": {
+        "details": "Mints asset(s) in accordance to a specific address with a particular \"option\". This should be callable only by the contract owner or the owner's Wyvern Proxy (later universal login will solve this). Options should also be delineated 0 - (numOptions() - 1) for convenient indexing.",
+        "params": {
+          "_amount": "amount of the option to mint",
+          "_data": "Extra data to pass during safeTransferFrom",
+          "_optionId": "the option id",
+          "_toAddress": "address of the future owner of the asset(s)"
+        }
+      },
+      "uri(uint256)": {
+        "details": "Returns a URL specifying some metadata about the option. This metadata can be of the same structure as the ERC1155 metadata."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "name()": {
+        "notice": "Returns the name of this provider."
+      },
+      "numOptions()": {
+        "notice": "Number of options the provider supports."
+      },
+      "providerSchemaName()": {
+        "notice": "Indicates the Wyvern schema name for assets in this lootbox, e.g. \"ERC1155\""
+      },
+      "supportsProviderInterface()": {
+        "notice": "Indicates that this is a provider contract. Ideally would use EIP 165 supportsInterface()"
+      },
+      "symbol()": {
+        "notice": "Returns the symbol for this provider."
+      }
+    },
+    "notice": "This is a generic provider contract that can be used to mint tokens. The configuration for minting is specified by an _optionId, which can be used to delineate various ways of minting.",
+    "version": 1
+  }
+}

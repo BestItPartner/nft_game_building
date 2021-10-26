@@ -1,0 +1,117 @@
+{
+  "contractName": "ApprovedSpenderContract",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/test/ApprovedSpenderContract.sol\":\"ApprovedSpenderContract\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":0},\"remappings\":[]},\"sources\":{\"project:/contracts/test/ApprovedSpenderContract.sol\":{\"keccak256\":\"0x95e08d08537b1d871119456f311b8217fea451e8f3c15993488baab52c220585\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://db130452871ad602d91abb00199029c4ecf09867a349efc12e7c77803281fb40\",\"dweb:/ipfs/QmZGUv6zTMRnEqnjkpTy6WSFSNNtveKXiLkDKJL8K4oZb5\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122067f32b281dfc8de48edcbc73a5edcab6462e74328cae15e63200d6a36c371d5a64736f6c63430008070033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122067f32b281dfc8de48edcbc73a5edcab6462e74328cae15e63200d6a36c371d5a64736f6c63430008070033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "62:43:39:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "62:43:39:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.8.0;\r\n\r\ncontract ApprovedSpenderContract {\r\n    \r\n}",
+  "sourcePath": "D:\\04_Work\\001\\NFT_presale\\smart_contract\\contracts\\test\\ApprovedSpenderContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/test/ApprovedSpenderContract.sol",
+    "exportedSymbols": {
+      "ApprovedSpenderContract": [
+        8172
+      ]
+    },
+    "id": 8173,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8171,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:23:39"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 8172,
+        "linearizedBaseContracts": [
+          8172
+        ],
+        "name": "ApprovedSpenderContract",
+        "nameLocation": "71:23:39",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 8173,
+        "src": "62:43:39",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:70:39"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/test/ApprovedSpenderContract.sol",
+    "exportedSymbols": {
+      "ApprovedSpenderContract": [
+        8172
+      ]
+    },
+    "id": 8173,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8171,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:23:39"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 8172,
+        "linearizedBaseContracts": [
+          8172
+        ],
+        "name": "ApprovedSpenderContract",
+        "nameLocation": "71:23:39",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 8173,
+        "src": "62:43:39",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:70:39"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-10-19T18:53:42.776Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
