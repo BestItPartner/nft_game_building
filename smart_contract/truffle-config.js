@@ -18,11 +18,6 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
-
 const { infuraApiKey, alchemyApiKey, mnemonic, etherscanApiKey } = require('./secrets.json');
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
@@ -42,14 +37,14 @@ if ((!MNEMONIC || !NODE_API_KEY) && needsNodeAPI) {
 
 const rinkebyNodeUrl = isInfura
   ? "https://rinkeby.infura.io/v3/" + NODE_API_KEY
-  : "wss://eth-rinkeby.alchemyapi.io/v2/" + NODE_API_KEY;
+  : "https://eth-rinkeby.alchemyapi.io/v2/" + NODE_API_KEY;
 
 const mainnetNodeUrl = isInfura
   ? "https://mainnet.infura.io/v3/" + NODE_API_KEY
   : "https://eth-mainnet.alchemyapi.io/v2/" + NODE_API_KEY;
 
 module.exports = {
-  contracts_build_directory: '../website/src/contracts',
+  contracts_build_directory: '../frontend/presale/src/contracts',
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
@@ -73,11 +68,9 @@ module.exports = {
      network_id: "*",       // Any network (default: none)
      gas: 5000000,
     },
+
     rinkeby: {
-      provider: () => new HDWalletProvider(
-      //mnemonic, `https://eth-rinkeby.alchemyapi.io/v2/${alchemyApiKey}`, 
-      // Error: PollingBlockTracker - encountered an error while attempting to update latest block:
-      MNEMONIC, rinkebyNodeUrl),
+      provider: () => new HDWalletProvider(MNEMONIC, rinkebyNodeUrl),
       network_id: 4,
       gasPrice: 10e9,
       gas: 3000000,
